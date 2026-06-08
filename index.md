@@ -5,7 +5,7 @@ title: Home
 
 # Probably Fair
 
-Hi, I'm Ryan. This is my learning archive for probability, statistics, mathematics, and the theory behind machine learning. I write only to clarify ideas, collect intuitions, and track my progress over time.
+Hi, this is Probably Fair. This is my learning archive for probability, statistics, mathematics, and the theory behind machine learning. I write only to clarify ideas, collect intuitions, and track my progress over time.
 
 ## Recent posts
 
