@@ -1,0 +1,25 @@
+---
+layout: page
+title: Archive
+permalink: /archive/
+---
+
+<div class="archive">
+  {% for post in site.posts %}
+    {% unless post.next %}
+      <h2 class="archive-year">{{ post.date | date: '%Y' }}</h2>
+    {% else %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% capture next_year %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+
+      {% if year != next_year %}
+        <h2 class="archive-year">{{ post.date | date: '%Y' }}</h2>
+      {% endif %}
+    {% endunless %}
+
+    <div class="archive-item">
+      <span class="archive-date">{{ post.date | date: "%b %-d" }}</span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </div>
+  {% endfor %}
+</div>

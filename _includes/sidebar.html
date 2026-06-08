@@ -1,0 +1,29 @@
+<aside class="sidebar">
+  <div class="profile">
+    <a class="avatar" href="{{ '/' | relative_url }}" aria-label="Home">
+      PF
+    </a>
+
+    <h1>
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </h1>
+
+    <p class="job">{{ site.owner.job }}</p>
+
+    <p class="bio">
+      {{ site.owner.bio }}
+    </p>
+
+    <nav class="nav">
+      <a href="{{ '/' | relative_url }}">home</a>
+      <span>/</span>
+      <a href="{{ '/archive/' | relative_url }}">archive</a>
+      <span>/</span>
+      <a href="{{ '/about/' | relative_url }}">about</a>
+    </nav>
+
+    <div class="links">
+      <a href="https://github.com/{{ site.owner.github }}">github</a>
+    </div>
+  </div>
+</aside>

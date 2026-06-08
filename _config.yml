@@ -5,10 +5,26 @@ author: Minh Quan
 url: "https://probablyfair.github.io"
 baseurl: ""
 
+timezone: "Asia/Ho_Chi_Minh"
+
 markdown: kramdown
+highlighter: rouge
 
-permalink: /:year/:month/:day/:title/
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
 
-collections:
-  posts:
-    output: true
+permalink: /articles/:year/:month/:title/
+
+owner:
+  name: Minh Quan
+  display_name: Minh Quan
+  job: Student
+  bio: This is where I keep notes on probability, statistics, mathematics, and things I am learning.
+  github: probablyfair
+  email:
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
