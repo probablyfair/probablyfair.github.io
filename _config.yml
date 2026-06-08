@@ -1,0 +1,14 @@
+title: Probably Fair
+description: Notes on probability, statistics, and the math of uncertainty.
+author: Minh Quan
+
+url: "https://probablyfair.github.io"
+baseurl: ""
+
+markdown: kramdown
+
+permalink: /:year/:month/:day/:title/
+
+collections:
+  posts:
+    output: true
