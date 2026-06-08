@@ -3,39 +3,31 @@ layout: default
 title: Home
 ---
 
-<section class="intro">
-  <h1>Probably Fair</h1>
+<h1>Probably Fair</h1>
 
-  <p>
-    Notes on probability, statistics, mathematics, and the math of uncertainty.
-  </p>
-</section>
+<p>
+  Notes on probability, statistics, mathematics, and the math of uncertainty.
+</p>
 
-<section class="post-list">
-  {% for post in site.posts %}
-    <article class="post-card">
-      <p class="post-meta">
-        {{ post.date | date: "%-d %b %Y" | upcase }}
-
-        {% if post.categories and post.categories.size > 0 %}
-          ·
-          {% for category in post.categories %}
-            <span>{{ category }}</span>{% unless forloop.last %} / {% endunless %}
-          {% endfor %}
-        {% endif %}
-      </p>
-
-      <h2>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </h2>
-
-      {% if post.excerpt %}
-        <div class="excerpt">
-          {{ post.excerpt }}
-        </div>
+{% for post in site.posts %}
+  <article class="post-card">
+    <p class="post-meta">
+      {{ post.date | date: "%-d %b %Y" | upcase }}
+      {% if post.categories and post.categories.size > 0 %}
+        · {{ post.categories | join: ", " }}
       {% endif %}
+    </p>
 
-      <a class="read-more" href="{{ post.url | relative_url }}">>> View post</a>
-    </article>
-  {% endfor %}
-</section>
+    <h2>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+
+    {% if post.excerpt %}
+      <div class="excerpt">
+        {{ post.excerpt }}
+      </div>
+    {% endif %}
+
+    <a class="read-more" href="{{ post.url | relative_url }}">→ View post</a>
+  </article>
+{% endfor %}
