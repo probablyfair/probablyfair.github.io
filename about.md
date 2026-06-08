@@ -6,13 +6,9 @@ permalink: /about/
 
 # About
 
-Hi, I’m Minh Quan.
+Hi, this is Probably Fair. This is where I keep notes of what I learned and accomplished, most of which are about probability, statistics, and mathematics. 
 
-I study Computer Science and I’m interested in probability, statistics, mathematics, and machine learning.
-
-This blog is my personal learning archive. I use it to write down ideas that I want to understand more deeply.
-
-The goal is not to sound perfect. The goal is to make my thinking clearer.
+I don't want this to sound perfect. I only want to make my thinking clearer.
 
 ## Why “Probably Fair”?
 

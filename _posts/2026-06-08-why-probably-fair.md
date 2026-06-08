@@ -19,7 +19,7 @@ This blog is my attempt to understand probability, statistics, and mathematical 
 
 ## What this blog is for
 
-I want this blog to be a place where I can store:
+I want this blog to be a place where I can keep notes of what I learned and accomplished, most of which might be about:
 
 - Math notes
 - Statistics intuition
@@ -28,21 +28,3 @@ I want this blog to be a place where I can store:
 - Paper summaries
 - Research ideas
 - Mistakes and lessons learned
-
-## A small example
-
-The expected value of a discrete random variable is:
-
-$$
-\mathbb{E}[X] = \sum_x x p(x)
-$$
-
-For a continuous random variable:
-
-$$
-\mathbb{E}[X] = \int_{-\infty}^{\infty} x f(x) dx
-$$
-
-At first, these formulas look simple. But they appear everywhere: estimation, machine learning, decision theory, risk, optimization, and inference.
-
-That is the kind of idea I want to understand better through writing.
