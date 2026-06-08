@@ -234,4 +234,21 @@ mjx-container {
   .content h2 {
     font-size: 26px;
   }
+  
+
+  .post-tags {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  }
+
+  .post-tags span {
+    font-size: 14px;
+    color: #6f6f6f;
+    border: 1px solid #e6e0d8;
+    border-radius: 999px;
+    padding: 3px 10px;
+    background: #fbfaf7;
+  }
 }
